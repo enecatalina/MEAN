@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Welcome to your profile doggie!</h1>
+        <h3><%= dogs._id %></h3>
+
+        <p><b>Name:</b> <%= dogs.Name %></p>
+        <p><b>Breed:</b><%= dogs.Breed %></p>
+        <p><b>Age:</b>
+            <%= dogs.Age %>
+        </p>
+        <p><b>Favorite Treat:</b>
+            <%= dogs.Favorite_Treat %>
+        </p>
+    </div>
+    <a href="edit/<%= dogs._id %>" class="btn btn-default" role"button">Edit</a>
+    <br>
+    <a href="/" class="btn btn-default" role="button">Doggie Home</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+button{
+    padding: 20px;
+    background: red;
+    width: 80px;
+    font-size: large;
+    font-weight: 800;
+    color: white;
+    border: 0px;
+}
+.switch{
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+    width: 60px;
+}
+.switchRow{
+    padding-left: 150px;  
+}
+.on{
+    background-color: green;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: bolder
+}

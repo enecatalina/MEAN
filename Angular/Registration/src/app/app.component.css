@@ -1,0 +1,15 @@
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+.ng-valid[required], .ng-valid.required {
+    color: red
+}
+
+.errors{
+    color: red;
+    font-weight: bold;
+}
+
+.success{
+    color: green;
+    font-weight: bold;
+}

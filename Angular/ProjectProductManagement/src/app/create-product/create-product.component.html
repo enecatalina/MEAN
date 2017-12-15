@@ -1,0 +1,39 @@
+<div class="container">
+  <form #formData="ngForm" (submit)="onSubmit()">
+    <div class="form-group">
+      <label for="formGroupExampleInput">Title</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Title"
+      required
+      minlength="4"
+      name="title"
+      [(ngModel)]="newProduct.title"
+      #title="ngModel">
+    </div>
+    <div>
+      <span *ngIf="!title.valid && title.touched" class="errors"> Title needs to be more than 4 characters</span>
+    </div>
+
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Price</label>
+      <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Price"
+      required
+      name="price"
+      [(ngModel)]="newProduct.price"
+      #price="ngModel">
+    </div>
+    <div>
+      <span *ngIf="!price.valid && price.touched" class="errors"> Required </span>
+    </div
+    >
+    <div class="form-group">
+      <label for="exampleInputFile">Upload Image</label>
+      <input type="text" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"
+      name="image"
+      [(ngModel)]="newProduct.image"
+      #image="ngModel">
+      <small id="fileHelp" class="form-text text-muted"></small>
+    </div>
+
+    <input type="submit" class="btn btn-primary" [disabled]="!formData.form.valid" value="Submit">
+  </form>
+</div>

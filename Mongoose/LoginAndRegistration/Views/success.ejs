@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Login and Register</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                <a href="/user/logout">Logout</a>
+
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+<div class="container-fluid"></div>
+    <div class="jumbotron">
+        <h1>Welcome <%= user.firstName %></h1>
+    </div>
+    <div class="container">
+        <b>Last Name:</b><p><%= user.lastName %></p>
+        <b>Email</b><p>
+            <%= user.email %>
+        </p>
+        <b>Birthday: </b><p>
+            <%= user.birthday %>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

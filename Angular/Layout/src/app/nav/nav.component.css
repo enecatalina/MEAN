@@ -1,0 +1,14 @@
+.nav{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+    vertical-align: top;
+    margin: 40px;
+}
+button{
+    display: block;
+    padding: 5px;
+    margin: 20px;
+    width: 50px;
+}

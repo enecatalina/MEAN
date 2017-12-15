@@ -1,0 +1,9 @@
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+.errors{
+    color: red
+}
+.container-fluid{
+    border: 2px solid grey;
+    margin: 50px;
+}

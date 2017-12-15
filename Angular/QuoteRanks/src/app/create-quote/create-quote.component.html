@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div>
+    <h1>Create a Quote</h1>
+  </div>
+  <form #formData='ngForm' (submit)="onSubmit(formData)">
+    <div class="form-group">
+      <label for="quote"></label>
+      <input text="text" name="quote" class="form-control"
+      required
+      minlength="4"
+      maxlength="50"
+      #quote="ngModel"
+      [(ngModel)]="newQuote.quote">
+    </div>
+    <span *ngIf="!quote.valid && quote.touched" class="errors">Quote is required.</span>
+
+    <div class="form-group">
+      <label for="author">Author:</label>
+      <input type="text"  name="author" class="form-control"
+      required
+      minlength="4"
+      maxlength="20"
+      #author="ngModel"
+      [(ngModel)]="newQuote.author">
+    </div>
+    <span *ngIf="!author.valid && author.touched " class="errors">Author is required.</span>
+
+    <div class="form-group">
+      <input type="number" name="rating"
+      required
+      #rating="ngModel"
+      [(ngModel)]="newQuote.rating"
+      minlength="0"
+      maxlength="1">
+    </div>
+    
+    <button type="submit" [disabled]="!formData.valid" class="btn btn-link">Submit! </button>
+  </form>
+  <!-- <div class='errors'>
+    <span *ngIf="!quote.valid && quote.untouched">Quote is required.</span>
+    <span *ngIf="!author.valid && author.untouched ">Author is required.</span>
+  </div> -->
+</div>

@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+   {{title}}
+  </h1>
+</div>
+<section>
+  <button (click)="getTimeZone('PST')" [ngClass]="{selected: lastTimeZoneSelected === 'PST'}">PST</button>
+  <button (click)="getTimeZone('MST')" [ngClass]="{selected: lastTimeZoneSelected === 'MST'}">MST</button>
+  <button (click)="getTimeZone('CST')" [ngClass]="{selected: lastTimeZoneSelected === 'CST'}">CST</button>
+  <button (click)="getTimeZone('EST')" [ngClass]="{selected: lastTimeZoneSelected === 'EST'}">EST</button>
+</section>
+<section>
+  <h3>{{time | date:'medium'}}</h3>
+</section>
+
+

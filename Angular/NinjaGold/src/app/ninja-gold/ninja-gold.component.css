@@ -1,0 +1,12 @@
+.wrapper{
+    border: grey solid 2px;
+    display: inline-block;
+    margin: auto;
+}
+.farm, .cave, .casino, .house{
+    display: inline-block;
+    margin: 30px;
+}
+button{
+    padding: 10px;
+}

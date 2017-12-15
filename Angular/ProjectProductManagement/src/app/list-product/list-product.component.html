@@ -1,0 +1,12 @@
+<h3>Products List</h3>
+<div class='products'>
+  
+    <ul class="list-group"  *ngFor="let product of products">
+      <li class="list-group-item">
+        <b>Title:</b>
+        {{ product.title}}<br>
+        <b>Price:</b>
+        {{ product.price}}
+      </li>
+    </ul>
+</div>

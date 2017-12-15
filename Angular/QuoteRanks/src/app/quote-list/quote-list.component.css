@@ -1,0 +1,53 @@
+.quote{
+    border: 5px solid grey;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+p{
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+span{
+    margin-left: 50px;
+}
+.buttons{
+    vertical-align: top;
+    width: 90px;
+    display: inline-block;
+    margin-left: 200px;
+}
+h2{
+    color: red;
+    font-size: 50px
+}
+
+.rating{
+    display: inline-block;
+    padding: 20px;
+    margin-left: 150px;
+}
+.up{
+    padding: 8px;
+    margin: 5px;
+    background-color: green;
+    color: white;
+    border: 0px;
+    width: 100px;
+}
+.down{
+    padding: 8px;
+    margin: 5px;
+    background-color: red;
+    color:  white;
+    border: 0px;
+    width: 100px;
+}
+.delete{
+    padding: 8px;
+    margin: 5px;
+    border: 2px solid red;
+    width: 100px;
+}

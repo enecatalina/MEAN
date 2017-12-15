@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Doggie Dashboard</h1>
+        <form action="/create" method="post" class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2"> Doggie Name:</label>
+                <div class="col-sm-10">
+                    <input type="name" name="name" class="form-control" placeholder="Enter Doggie Name...">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Doggie Breed: </label>
+                <div class="col-sm-10">
+                    <input type="breed" name="breed" class="form-control" placeholder="Enter your dog's breed!">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Doggie Age:</label>
+                <div class="col-sm-10">
+                    <input type="number" name="age" class="form-control" placeholder="Enter your dog's age!">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Favorite Treat:</label>
+                <div class="col-sm-10">
+                    <input type="treat" name="treat" class="form-control" placeholder="Enter your dog's favorite treat!">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+        <% if(typeof(errors) != 'undefined' ) { %>
+            <% for (var x in errors) { %>
+                <p>
+                    <%= errors[x].message %>
+                </p>
+                <% } %>
+                    <% } %>
+    </div>
+    <a href="/" class="btn btn-default">Doggie Home</a>
+</body>
+</html>

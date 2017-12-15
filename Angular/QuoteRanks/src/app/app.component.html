@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<app-create-quote (createQuote)='handleCreateQuote($event)'></app-create-quote> 
+<!-- myQuote is the attribute and quote is ateh value -->
+<!-- need to write @input() in create-component and equal it to myQuote -->
+<app-quote-list [myQuote]="quotes"  (deleteQuoteEvent)="deleteQuote($event)"></app-quote-list>
